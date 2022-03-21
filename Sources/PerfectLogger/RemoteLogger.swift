@@ -68,14 +68,8 @@ public struct RemoteLogger {
 			curlObject.setOption(CURLOPT_HTTPHEADER, s: "Content-Type: application/json")
 		}
 		
-		
-		
 		var header = [UInt8]()
 		var bodyIn = [UInt8]()
-		
-		let code = 0
-		let data = [String: Any]()
-		let raw = [String: Any]()
 		
 		var perf = curlObject.perform()
 		defer { curlObject.close() }
