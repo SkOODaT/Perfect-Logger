@@ -52,7 +52,7 @@ public struct RemoteLogger {
 			throw error
 		}
 		
-		var url = RemoteLogger.logServer + logAPI + RemoteLogger.token
+		let url = RemoteLogger.logServer + logAPI + RemoteLogger.token
 		
 		let curlObject = CURL(url: url)
 		curlObject.setOption(CURLOPT_HTTPHEADER, s: "Accept: application/json")
@@ -73,9 +73,9 @@ public struct RemoteLogger {
 		var header = [UInt8]()
 		var bodyIn = [UInt8]()
 		
-		var code = 0
-		var data = [String: Any]()
-		var raw = [String: Any]()
+		let code = 0
+		let data = [String: Any]()
+		let raw = [String: Any]()
 		
 		var perf = curlObject.perform()
 		defer { curlObject.close() }
