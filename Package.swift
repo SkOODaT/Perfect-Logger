@@ -10,7 +10,7 @@ let package = Package(
 		.library(name: "PerfectLogger", targets: ["PerfectLogger"])
     ],
 	dependencies: [
-        .package(name: "PerfectCURL", url: "https://github.com/123FLO321/Perfect-CURL.git", .branch("swift5")),
+        .package(name: "PerfectCURL", url: "https://github.com/SkOODaT/Perfect-CURL.git", .branch("SKOODAT")),
 	],
 	targets: [
 		.target(name: "PerfectLogger", dependencies: ["PerfectCURL"])
